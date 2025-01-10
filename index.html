@@ -1,3 +1,168 @@
-<h1>
-    Test
-</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AA Analytics</title>
+    <meta name="description" content="Sports Analytic Research Toolkit">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Structured Data for Projects -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListElement": [
+            {
+                "@type": "Projects",
+                "name": "Big Game Gabe Davis Touchdown Model",
+                "description": "Created Anytime Touchdown Scorer Model for NFL pass catchers",
+                "url": "https://biggamegabefallacy.streamlit.app/",
+                "codeRepository": "https://github.com/angelesaaron/biggamegabefallacy",
+                "keywords": ["Gabe Davis", "Anytime Touchdown", "Machine Learning", "Sports Analytics"],
+                "datePublished": "2024",
+                "mentions": {
+                    "@type": "Organization",
+                    "name": "National Football League"
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <div class="scroll-progress">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container nav-container">
+            <h3>AA-Analytics</h3>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#blog">Writing</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>AA-Analytics</h2>
+            </div>
+            <div class="about-content fade-in">
+                <div class="about-text">
+                    <p>Sports analytics platform to showcase various tools and research in NFL and College Football analytics. 
+                        It highlights my work on predictive models and analytical tools used to assess player performance, value gambling and team strategy.
+                        The platform also features a collection of articles and blog posts that delve into key trends and findings in the world of sports analytics, giving friends, fans and gamblers alike a comprehensive resource for analyzing sports. 
+                    </p>
+                </div>
+                <div class="about-images">
+                    <div class="about-image">
+                        <img src="img/PlaycallProfilerNew.jpeg" alt="Playcall Profiler App">
+                    </div>
+                    <div class="about-image">
+                        <img src="img/BigGameGabeNew.jpeg" alt="Big Game Gabe Davis TD Model">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Projects</h2>
+            </div>
+            
+            <div class="project-card fade-in">
+                <div class="project-header">
+                    <div class="project-title-container">
+                        <h3 class="project-title">Big Game Gabe Davis Touchdown Model</h3>
+                        <div class="project-subtitle">Streamlit App</div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://biggamegabefallacy.streamlit.app/" target="_blank" data-tooltip="Streamlit App">
+                            <i class="fas fa-football"></i>
+                        </a>
+                        <a href="https://github.com/angelesaaron/biggamegabefallacy" target="_blank" data-tooltip="View the Code">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <p class="project-text">The <a href="https://biggamegabefallacy.streamlit.app/">Big Game Gabe Davis Touchdown Model</a> is a Streamlit application built on a random forest machine learning model that predicts the likelihood of an NFL player scoring a touchdown in the upcoming week. 
+                        The model processes a combination of comprehensive NFL box score statistics and situational data, including prior game performance, statistical team tendencies, and historical trends. 
+                        It compares the model's predictions with the odds provided by popular sportsbooks, helping users identify potential value discrepancies. Additionally, the app provides a list of the week's best picks based on touchdown likelihood, along with the best value picks from each sportsbook provider. 
+                        This tool offers sports enthusiasts and bettors a data-driven approach to evaluating player performances and finding profitable betting opportunities.
+                    </p>
+                </div>
+                <div class="project-media">
+                    <div class="project-media-item">
+                        <div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/xPOBcjepqYpvMkb5Gm" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/nfl-sports-football-sport-xPOBcjepqYpvMkb5Gm">via GIPHY</a></p>
+                    </div>
+                    <div class="project-media-item">
+                        <img src="img/BigGameGabeGif.gif" alt="Tackle Probability Visualization">
+                        <div class="caption">Model in Action</div>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Streamlit</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">Machine Learning</span>
+                    <span class="tech-tag">Data Visualization</span>
+                </div>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-header">
+                    <div class="project-title-container">
+                        <h3 class="project-title">Playcall Profiler</h3>
+                        <div class="project-subtitle">Streamlit App</div>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://playcallprofiler.streamlit.app/" target="_blank" data-tooltip="Streamlit App">
+                            <i class="fas fa-football"></i>
+                        </a>
+                        <a href="https://github.com/angelesaaron/PlaycallProfiler" target="_blank" data-tooltip="View the Code">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <p class="project-text"><a href="https://playcallprofiler.streamlit.app/">Playcall Profiler</a> is a Streamlit application that aggregates the latest NFL play-by-play data for every game in the current season, providing users with detailed insights into playcalling tendencies. 
+                        The app allows users to filter scenarios based on various factors such as down, distance, field position, and scoring margin, offering a comprehensive view of play distributions and scoring play probabilities. 
+                        Fans can use the tool to gauge team strategies and understand the thought process behind playcalls, enhancing their viewing and gambling experience. 
+                        By analyzing these scenarios, users can visualize trends in offensive and defensive strategies across different situations. 
+                        Playcall Profiler empowers fans with a deeper understanding of game dynamics and the probability of specific outcomes based on playcall data.
+                </div>
+                <div class="project-media">
+                    <div class="project-media-item">
+                        <img src="img/PlaycallProfilerGIF.gif" alt="Tackle Probability Visualization">
+                        <div class="caption">Playcall Profiler: 4th and Short</div>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Streamlit</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">Data Visualization</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <button class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src='https://widgets.sociablekit.com/medium-publication-feed/widget.js' async defer></script>
+</body>
+</html>
