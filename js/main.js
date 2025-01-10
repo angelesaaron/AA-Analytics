@@ -107,46 +107,6 @@ document.querySelectorAll('.fade-in').forEach((element) => {
     observerFadeIn.observe(element);
 });
 
-// Email copy functionality
-const emailBtn = document.querySelector('.copy-email');
-const email = 'mpchang17@gmail.com';
-let tooltipTimeout;
-let tooltip;
-
-const createTooltip = (text, x, y) => {
-    if (tooltip) tooltip.remove();
-    tooltip = document.createElement('div');
-    tooltip.className = 'email-tooltip';
-    tooltip.textContent = text;
-    tooltip.style.left = x + 'px';
-    tooltip.style.top = y + 'px';
-    document.body.appendChild(tooltip);
-    return tooltip;
-};
-
-const removeTooltip = () => {
-    if (tooltip) {
-        tooltip.style.opacity = '0';
-        setTimeout(() => tooltip.remove(), 200);
-    }
-};
-
-emailBtn.addEventListener('click', async (e) => {
-    const rect = emailBtn.getBoundingClientRect();
-    const x = rect.left + (rect.width / 2) - 50;
-    const y = rect.bottom + 10;
-
-    try {
-        await navigator.clipboard.writeText(email);
-        createTooltip('Email copied!', x, y);
-    } catch (err) {
-        createTooltip('Failed to copy', x, y);
-    }
-
-    clearTimeout(tooltipTimeout);
-    tooltipTimeout = setTimeout(removeTooltip, 2000);
-});
-
 // Event listeners
 window.addEventListener('scroll', () => {
     updateScrollProgress();

@@ -124,72 +124,6 @@ body {
     transform: scaleX(1);
 }
 
-/* Hero Section */
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    padding-top: 5rem;
-    background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
-    position: relative;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    opacity: 0.1;
-}
-
-.hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(255, 255, 255, 0.9);
-    z-index: 1;
-}
-
-.hero .container {
-    position: relative;
-    z-index: 2;
-}
-
-.hero-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-}
-
-.hero-text h1 {
-    font-size: 4rem;
-    line-height: 1.1;
-    margin-bottom: 1.5rem;
-    background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.hero-text p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: var(--text-light);
-}
-
-.hero-image img {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
@@ -242,79 +176,6 @@ body {
 .back-to-top:hover {
     transform: translateY(-5px);
     background: var(--secondary-color);
-}
-
-/* Social Icons */
-.social-icons {
-    display: flex;
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.social-icons a,
-.social-icons button {
-    position: relative;
-    overflow: hidden;
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    transition: var(--transition);
-    padding: 0.5rem;
-    border-radius: 50%;
-    background-color: var(--section-bg-light);
-    width: 2.5rem;
-    height: 2.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-}
-
-.social-icons a::before,
-.social-icons button::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 0;
-    height: 0;
-    background: var(--accent-color);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0.1;
-    transition: width 0.3s ease, height 0.3s ease;
-}
-
-.social-icons a:hover::before,
-.social-icons button:hover::before {
-    width: 2.5rem;
-    height: 2.5rem;
-}
-
-.social-icons a:hover,
-.social-icons button:hover {
-    color: var(--accent-color);
-    transform: translateY(-3px);
-    cursor: pointer;
-}
-
-.email-tooltip {
-    position: fixed;
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 8px 12px;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    pointer-events: none;
-    transition: opacity 0.2s ease;
-    z-index: 1000;
-}
-
-.social-icons .copy-email {
-    cursor: pointer;
-}
-
-.social-icons .copy-email:focus {
-    outline: none;
 }
 
 /* Link Styles */
@@ -383,50 +244,6 @@ section:nth-child(even) {
     background-size: 20px 20px;
     opacity: 0.5;
     pointer-events: none;
-}
-
-/* Experience Section */
-.experience {
-    padding: var(--section-padding);
-}
-
-.experience .section-header {
-    margin-bottom: 5rem;
-}
-
-.timeline {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.timeline-item {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    padding: 2rem;
-    background: #fff;
-    border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    margin-bottom: 2rem;
-    transition: var(--transition);
-}
-
-.timeline-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
-}
-
-.timeline-header {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.company-logo {
-    width: 60px;
-    height: 60px;
-    object-fit: contain;
 }
 
 /* About Section */
@@ -743,9 +560,9 @@ section:nth-child(even) {
         font-size: 2.5rem;
     }
 
-    .nav-links {
+    /* .nav-links {
         display: none;
-    }
+    } */
 
     .mobile-menu {
         display: block;
