@@ -225,6 +225,13 @@ section:nth-child(even) {
 
 .section-header {
     margin-bottom: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.section-header img{
+    vertical-align: middle; /* Align the icon vertically with text */
+    margin-right: 10px; /* Add some spacing between the icon and the text */
 }
 
 .section-header h2 {
@@ -312,6 +319,15 @@ section:nth-child(even) {
     background-color: var(--secondary-color);
     color: white;
     transform: translateY(-2px);
+}
+
+
+/* NFL SECTION */
+.nfl {
+    padding: var(--section-padding)
+}
+.nfl .section-header {
+    margin-bottom: 5rem;
 }
 
 /* Projects Section */
@@ -545,6 +561,90 @@ section:nth-child(even) {
     background: var(--accent-color);
     width: 0%;
     transition: width 0.1s ease;
+}
+/* College Section */
+.college {
+    padding: var(--section-padding);
+}
+
+.college .section-header {
+    margin-bottom: 5rem;
+}
+
+/* NBA Section */
+.nba {
+    padding: var(--section-padding);
+}
+
+.nba .section-header {
+    margin-bottom: 5rem;
+}
+
+/* Mini Cards */
+.mini-project {
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.mini-project-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    transition: var(--transition);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.mini-project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.mini-project-header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* TIME LINE ITEMS */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+    transition: var(--transition);
+}
+
+.timeline-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.company-logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
 }
 
 /* Responsive Design */

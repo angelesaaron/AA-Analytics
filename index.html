@@ -42,9 +42,11 @@
         <div class="container nav-container">
             <h3>AA-Analytics</h3>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#blog">Writing</a></li>
+                <li><a href="#about" class>About</a></li>
+                <li><a href="#nfl">NFL</a></li>
+                <li><a href="#collegefootball">CFB</a></li>
+                <li><a href="#nba">NBA</a></li>
+                <!-- <li><a href="#blog">Writing</a></li> -->
             </ul>
         </div>
     </nav>
@@ -78,11 +80,12 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <!-- NFL SECTION -->
+    <section id="nfl" class="nfl">
         <div class="container">
             <div class="section-header">
-                <h2>Projects</h2>
+                <img src="img/nfl.svg" class="company-logo">
+                <h2>National Football League</h2>
             </div>
             
             <div class="project-card fade-in">
@@ -148,7 +151,7 @@
                 </div>
                 <div class="project-media">
                     <div class="project-media-item">
-                        <img src="img/PlaycallProfilerGIF.gif" alt="Tackle Probability Visualization">
+                        <img src="img/PlaycallProfilerGIF.gif" alt="Playcall Profiler gifs">
                         <div class="caption">Playcall Profiler: 4th and Short</div>
                     </div>
                 </div>
@@ -159,8 +162,112 @@
                     <span class="tech-tag">Data Visualization</span>
                 </div>
             </div>
+            <div class="mini-project">
+                <div class="mini-project-item fade-in">
+                    <div class="mini-project-header">
+                        <a href="" target="_blank">
+                            <img src="img/NFLDraftLogo.svg" alt="Gators Logo" class="company-logo">
+                        </a>
+                        <div>
+                            <h3>2025 NFL Draft Big Board</h3>
+                            <p>Research</p>
+                        </div>
+                    </div>
+                    <div class="mini-project-content">
+                        <p> Developing own internal ratings system for NFL Draft prospects based on a variety of factors.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- College Section -->
+    <section id="collegefootball" class="college">
+        <div class="container">
+            <div class="section-header">
+                <img src="img/CollegeFootballPlayoff.svg" alt="College Football Playoff" class="company-logo">
+                <h2>College Football</h2>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-header">
+                    <div class="project-title-container">
+                        <h3 class="project-title">Analyzing the 2025 Florida Gators Recruiting Class</h3>
+                        <div class="project-subtitle">Research</div>
+                    </div>
+                    <div class="project-links">
+                        <a href="" target="_blank" data-tooltip="TBD">
+                            <i class="fas fa-football"></i>
+                        </a>
+                        <a href="" target="_blank" data-tooltip="TBD">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <p class="project-text"> In Progress
+                       </p>
+                </div>
+                <div class="project-media">
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">R</span>
+                    <span class="tech-tag">dplyr</span>
+                    <span class="tech-tag">recruitR</span>
+                    <span class="tech-tag">sportsdataverse</span>
+                    <span class="tech-tag">Machine Learning</span>
+                    <span class="tech-tag">Data Visualization</span>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- NBA SECTION-->
+     <section id="nba" class="'nba">
+        <div class='container'>
+            <div class="section-header">
+                <img src="img/NBA.svg" alt="NBA" class="company-logo">
+                <h2>National Basketball Association</h2>
+            </div>
+            <div class="project-card fade-in">
+                <div class="project-header">
+                    <div class="project-title-container">
+                        <h3 class="project-title">Optimal Tweet Time</h3>
+                        <div class="project-subtitle">NBA Future Analytics Stars Program</div>
+                    </div>
+                    <div class="project-links">
+                        <a href="" target="_blank" data-tooltip="TBD">
+                            <i class="fa-solid fa-basketball"></i>
+                        </a>
+                        <a href="https://github.com/angelesaaron/NBAFAS" target="_blank" data-tooltip="View the Code">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-description">
+                    <p class="project-text">
+                        Analyzing the most optimal time to tweet, and explore tweet content that leads to high engagement. 
+                        Scope of analysis focused on the NBA league account and the team accounts from the affiliate leagues. 
+                        The affiliate leagues include the NBA 2K League, NBA G-League, and the WNBA.
+                    </p>              
+                </div>
+                <div class="project-media">
+                    <div class="project-media-item">
+                        <img src="img/PlaycallProfilerGIF.gif" alt="Playcall Profiler gifs">
+                        <div class="caption">Playcall Profiler: 4th and Short</div>
+                    </div>
+                </div>
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Streamlit</span>
+                    <span class="tech-tag">Pandas</span>
+                    <span class="tech-tag">Data Visualization</span>
+                </div>
+            </div>
+
+        </div>
+
+     </section>
 
     <button class="back-to-top" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
