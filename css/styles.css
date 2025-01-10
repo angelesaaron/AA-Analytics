@@ -462,6 +462,7 @@ section:nth-child(even) {
     border-radius: 10px;
     display: block;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: scale(0.80);
 }
 
 .about-image:hover img {
